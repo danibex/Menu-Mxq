@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid #01</title>
+    <style>
+        html,
+        body {
+            margin: 0px;
+            height: 99%;
+            background-color: lightgray;
+        }
+        
+        div {
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            border: solid 5px dodgerblue;
+            background: #fff;
+            height: 100%;
+            width: 100%;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(11, 8.36%);
+            grid-template-rows: 50px repeat(5, 16.6%);
+            
+        }
+        .d2, .d3, .d4, .d5, .d6, .d7, .d8, .d9, .d10, .d11, .d12, .d13, .d14, .d15, .d16, .d17 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .d1 {
+            grid-column-start: 1;
+            grid-column-end: 12;
+        }
+        .d2 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: span 5;
+        }
+        .d3 {
+            grid-column-start: 4;
+            grid-column-end: span 4;
+            grid-row-start: 2;
+            grid-row-end: span 2;
+        }
+        .d4 {
+            grid-column-start: 8;
+            grid-column-end: span 2;
+            grid-row-start: 2;
+            grid-row-end: span 2;
+        }
+        .d5 {
+            grid-column-start: 10;
+            grid-column-end: span 2;
+            grid-row-start: 2;
+            grid-row-end: span 2;
+        }
+        .d6 {
+            grid-column-start: 4;
+            grid-column-end: span 2;
+            grid-row-start: 4;
+            grid-row-end: span 2;
+        }
+        .d7 {
+            grid-column-start: 6;
+            grid-column-end: span 2;
+            grid-row-start: 4;
+            grid-row-end: span 2;
+        }
+        .d8 {
+            grid-column-start: 8;
+            grid-column-end: span 2;
+            grid-row-start: 4;
+            grid-row-end: span 2;
+        }
+        .d9 {
+            grid-column-start: 10;
+            grid-column-end: span 2;
+            grid-row-start: 4;
+            grid-row-end: span 2;
+        }
+        #vscode {
+            max-width: auto;
+            max-height: auto;
+            width: 100px;
+        }
+        h2 {
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+        a {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="d1">1</div>
+        <div class="d2"><a href=""><img id="vscode" src="/img/code.png" alt=""></a><h2>VS Code</h2></div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+        <div class="d6">6</div>
+        <div class="d7">7</div>
+        <div class="d8">8</div>
+        <div class="d9">9</div>
+        <div class="d10">10</div>
+        <div class="d11">11</div>
+        <div class="d12">12</div>
+        <div class="d13">13</div>
+        <div class="d14">14</div>
+        <div class="d15">15</div>
+        <div class="d16">16</div>
+        <div class="d17">17</div>
+    </div>
+</body>
+</html>
